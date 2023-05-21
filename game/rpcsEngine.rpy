@@ -15,6 +15,7 @@ label forcemenu:
 
             else:
                 bcom "Our forces are too weakend to attack anny territory and still deffend your borders"
+                jump forcemenu
 
         "Hire soldiers":
 
