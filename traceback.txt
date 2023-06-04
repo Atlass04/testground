@@ -1,85 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/rpcsEngine.rpy", line 12, in script
-    "pasa"
-  File "game/rpcsEngine.rpy", line 12, in script
-    "pasa"
-  File "game/screens.rpy", line 1128, in execute
-    screen confirm(message, yes_action, no_action):
-  File "game/screens.rpy", line 1128, in execute
-    screen confirm(message, yes_action, no_action):
-  File "game/screens.rpy", line 1139, in execute
-    frame:
-  File "game/screens.rpy", line 1141, in execute
-    vbox:
-  File "game/screens.rpy", line 1146, in execute
-    label _(message):
-  File "game/screens.rpy", line 1146, in <module>
-    label _(message):
-TypeError: 'bool' object is not callable
+  File "game/rpcsEngine.rpy", line 79, in script
+    if groundtaken >= 20 and foresttribe == False:
+  File "game/rpcsEngine.rpy", line 79, in <module>
+    if groundtaken >= 20 and foresttribe == False:
+NameError: name 'foresttribe' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "E:\Coding\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
-    renpy.main.main()
-  File "E:\Coding\renpy-8.0.3-sdk\renpy\main.py", line 660, in main
-    run(restart)
-  File "E:\Coding\renpy-8.0.3-sdk\renpy\main.py", line 146, in run
-    renpy.execution.run_context(True)
-  File "E:\Coding\renpy-8.0.3-sdk\renpy\execution.py", line 938, in run_context
-    context.run()
-  File "game/rpcsEngine.rpy", line 12, in script
-    "pasa"
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
-  File "game/rpcsEngine.rpy", line 12, in script
-    "pasa"
-  File "E:\Coding\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "E:\Coding\renpy-8.0.3-sdk\renpy\exports.py", line 1373, in say
-    who(what, *args, **kwargs)
-  File "E:\Coding\renpy-8.0.3-sdk\renpy\character.py", line 1266, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "E:\Coding\renpy-8.0.3-sdk\renpy\character.py", line 927, in do_display
-    display_say(who,
-  File "E:\Coding\renpy-8.0.3-sdk\renpy\character.py", line 666, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "E:\Coding\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "E:\Coding\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "E:\Coding\renpy-8.0.3-sdk\renpy\display\core.py", line 3810, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "E:\Coding\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  File "E:\Coding\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  File "E:\Coding\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  File "E:\Coding\renpy-8.0.3-sdk\renpy\display\screen.py", line 451, in visit_all
-    callback(self)
-  File "E:\Coding\renpy-8.0.3-sdk\renpy\display\core.py", line 3810, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "E:\Coding\renpy-8.0.3-sdk\renpy\display\screen.py", line 462, in per_interact
-    self.update()
-  File "E:\Coding\renpy-8.0.3-sdk\renpy\display\screen.py", line 653, in update
-    self.screen.function(**self.scope)
-  File "game/screens.rpy", line 1128, in execute
-    screen confirm(message, yes_action, no_action):
-  File "game/screens.rpy", line 1128, in execute
-    screen confirm(message, yes_action, no_action):
-  File "game/screens.rpy", line 1139, in execute
-    frame:
-  File "game/screens.rpy", line 1141, in execute
-    vbox:
-  File "game/screens.rpy", line 1146, in execute
-    label _(message):
-  File "game/screens.rpy", line 1146, in <module>
-    label _(message):
-TypeError: 'bool' object is not callable
+  File "game/rpcsEngine.rpy", line 79, in script
+    if groundtaken >= 20 and foresttribe == False:
+  File "E:\Coding\renpy-8.0.3-sdk\renpy\ast.py", line 2115, in execute
+    if renpy.python.py_eval(condition):
+  File "E:\Coding\renpy-8.0.3-sdk\renpy\python.py", line 1092, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "E:\Coding\renpy-8.0.3-sdk\renpy\python.py", line 1085, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/rpcsEngine.rpy", line 79, in <module>
+    if groundtaken >= 20 and foresttribe == False:
+NameError: name 'foresttribe' is not defined
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.0.3.22090809
 testground 1.0
-Sun May 21 22:39:41 2023
+Sun Jun  4 23:28:23 2023

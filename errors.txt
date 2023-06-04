@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/rpcsEngine.rpy", line 25: keyword argument 'action' appears more than once in a imagebutton statement.
-    action return()
-          ^
+File "game/rpcsEngine.rpy", line 15: expected menuitem
+    xpos 100
+    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sun May 21 22:38:27 2023
+Sun Jun  4 22:48:04 2023
