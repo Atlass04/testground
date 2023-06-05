@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/rpcsEngine.rpy", line 15: expected menuitem
-    xpos 100
-    ^
+File "game/blueevents.rpy", line 2: end of line expected.
+    scene forestpath.png
+                    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sun Jun  4 22:48:04 2023
+Mon Jun  5 22:34:10 2023
