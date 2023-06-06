@@ -2,9 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/blueevents.rpy", line 2: end of line expected.
-    scene forestpath.png
-                    ^
+File "game/blueevents.rpy", line 95: expected statement.
+    floatvar == 3
+             ^
+
+File "game/blueevents.rpy", line 125: expected statement.
+    floatvar == 3
+             ^
+
+File "game/blueevents.rpy", line 150: expected statement.
+    floatvar == 3
+             ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Mon Jun  5 22:34:10 2023
+Tue Jun  6 12:31:14 2023

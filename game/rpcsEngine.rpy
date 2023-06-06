@@ -4,8 +4,8 @@ label firstbluebase:
     $ rep = 100
     $ groundtaken = 30
 
-    $ foresttribe = False
-
+    $ wolftribe = "undecided"
+    $ black = Solid("#000000")  # Create a black image
     $ forcechange = 0
     $ moneychange = 0
     $ repchange = 0
@@ -18,8 +18,17 @@ label bluehub:
         "Survey your forces":
             "You summon your commander"
             jump bluewarevents
+        "Dorms":
+            jump dormmenu
         "End the day":
             call bluedayend
+#-------------------------------------------------------------------#
+#-----------------Dorm menu-----------------------------------------#
+#-------------------------------------------------------------------#
+label dormmenu:
+    menu:
+        "Visit Koyo." if koyo == True:
+            
 
 #-------------------------------------------------------------------#
 #-----------------Military acts-------------------------------------#
@@ -58,6 +67,7 @@ label forcemenu:
 
         "Return":
             "You dismiss your commander"
+            hide screen bluemap
             jump bluehub
     jump forcemenu
 #-----------------------
@@ -78,7 +88,7 @@ screen bluemap:
 #------war events-------
 label bluewarevents:
     #Forest tribe recapture
-    if groundtaken >= 20 and foresttribe == False:
+    if groundtaken >= 20 and wolftribe == "undecided":
         bcom "We have captured the territory around those traitorous beasts of the forest tribe"
         bcom "Are we ready to begin the assault on their little vilage?"
         menu:

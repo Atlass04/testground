@@ -1,3 +1,7 @@
+#-------------------------------------------------------------------#
+#-----------------Start of foresttribe------------------------------#
+#-------------------------------------------------------------------#
+
 label forestassaultblue:
     scene forestpath
     "As you step into the dense forest, a shiver runs down your spine."
@@ -79,16 +83,16 @@ label forestassaultblue:
             mc "Your firstborn will join my house."
             "The wolves start snarling intensely, and a fight seems imminent."
             wolfeld "Unacc-{w=0.4}{nw}"
-            koyo "I accept."
+            unowkn "I accept."
             "A young halfwolf has approached the party, and now stands between you and the elder."
             "She is a bit on the shorter side and is quite slim."
             "Her hair is an ashen silver, and cut just below the ears."
             koyo "For the sake of my tribe I accept your demands."
             wolfeld "But Koyo..."
             koyo "No, it's for the best of the tribe, so I'll go."
-            wolfeld ".{w=0.8}.{w=0.8}."
+            wolfeld ".{w=0.5}.{w=0.5}."
             wolfeld "Fine, the forest tribe accepts the alliance"
-            "A heavy silence befalls the wolfmen."
+            "A heavy silence has fallen over the wolfmen."
             mc "Then it's decided, this will benefit both of us greatly."
             $ koyo == True
             $ wolftribe == "ally"
@@ -158,7 +162,20 @@ label forestassaultblue:
                 $ koyo == False
                 $ wolftribe == "Free"
 
+    bcom "We're going back, boys!"
+    bsol "Yes sir!"
 
+    show black with dissolve  # Show the black image with dissolve effect
+    pause 1.0  # Pause for one second
+    hide black with dissolve  # Hide the black image with dissolve effect
 
+    scene forestpath
+    "The journey back takes longer, the fighting has taken a heavy toll on your party."
+    "Some soldiers are carried on stretchers, and many still wounded by arrows."
+    "The mood however is rather cheerfull. The forest tribe is once again allied to your house."
+    "Your camp soon lies ahead of you, and workers come running to help with the wounded."
+    jump bluehub
 
-            # Insert code for the "Make your forces attack" path here.
+#-----------------End of foresttribe--------------------------------#
+#-------------------------------------------------------------------#
+#-----------------
